@@ -1,3 +1,12 @@
+.game-board{
+    background-image: url("https://previews.123rf.com/images/punphoto/punphoto1203/punphoto120300094/12753800-green-grass-background-texture.jpg");
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
 .square{
     width: 200px;
     height: 200px;
@@ -8,12 +17,76 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    width: 618px;
-    height: 618px;
+    width: 660px;
+    height: 650px;
+    background: antiquewhite;
+    border: solid 5px black;
+    border-radius: 10px;
+    margin-top: 20px;
 
 }
 .mole{
     background-image: url('images/mole.png');
     background-size: cover;
 }
+
+.game-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: antiquewhite;
+    border-radius: 40px;
+}
+
+@media only screen and (min-width: 414px) and (max-width: 767px),
+  (min-width: 412px) and (max-width: 767px),
+  (min-width: 390px) and (max-width: 767px),
+  (min-width: 428px) and (max-width: 767px),
+  (min-width: 384px) and (max-width: 767px),
+  (min-width: 360px) and (max-width: 767px) {
+    .game-board{
+        background-image: url("https://previews.123rf.com/images/punphoto/punphoto1203/punphoto120300094/12753800-green-grass-background-texture.jpg");
+        height: 480px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .square{
+        width: 90px;
+        height: 90px;
+        border: solid 2px black;
+    }
+    .grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        width: 660px;
+        height: 500px;
+        background: antiquewhite;
+        border: solid 5px black;
+        border-radius: 10px;
+        margin-top: 20px;
+    
+    }
+    .game-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: antiquewhite;
+        border-radius: 40px;
+    }
+    .game-info h1{
+        font-size: 17px;
+
+    }
+    .game-info h2{
+        font-size: 15px;
+        
+    }
+
+  }
 
